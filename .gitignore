@@ -1,0 +1,23 @@
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+frontend/.vscode/*
+!frontend/.vscode/extensions.json
+
+# Backend
+hideal/target/
+hideal/.mvn/wrapper/maven-wrapper.jar
+hideal/.idea/
+hideal/.vscode/
+hideal/.classpath
+hideal/.project
+hideal/.settings/
+
+# General
+*.log
+.DS_Store
+*.suo
+*.sw?
+.idea/
