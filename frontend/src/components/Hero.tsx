@@ -19,13 +19,18 @@ export function Hero({ profile }: HeroProps) {
       <div className="absolute inset-0 bg-linear-to-t from-ink/85 via-transparent to-ink/25" />
 
       <div className="section-container relative flex min-h-screen items-center pt-28 pb-20">
-        <div className="max-w-2xl">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-crimson">{profile.name}</p>
-          <h1 className="font-display text-4xl font-semibold leading-tight text-white md:text-5xl lg:text-6xl">
-            {profile.tagline}
+        <div className="max-w-3xl">
+          <h1 className="font-display text-[clamp(2.5rem,7vw,4.25rem)] font-semibold leading-none tracking-[0.12em] text-white">
+            {profile.name}
           </h1>
-          <div className="mt-5 h-1 w-16 bg-crimson" />
-          <p className="mt-5 max-w-lg text-lg leading-relaxed text-white/80">
+          <div className="mt-5 flex items-center gap-4">
+            <div className="h-px w-10 bg-crimson" />
+            <div className="h-1 w-14 bg-crimson" />
+          </div>
+          <p className="mt-5 font-display text-xl font-medium leading-snug text-white/95 md:text-2xl lg:text-3xl">
+            {profile.tagline}
+          </p>
+          <p className="mt-5 max-w-lg text-lg leading-relaxed text-white/75">
             Real estate, technology, and sustainability—united to create future-ready environments.
           </p>
 
