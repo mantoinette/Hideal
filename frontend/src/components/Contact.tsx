@@ -14,6 +14,7 @@ export function Contact({ profile }: ContactProps) {
   const [feedback, setFeedback] = useState('')
 
   const { contact } = profile
+  const supportEmail = contact.supportEmail ?? 'support@hideal.rw'
   const phoneHref = `tel:${contact.phone.replace(/\s/g, '')}`
   const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
     `${contact.location}, ${contact.address}`,
@@ -72,6 +73,10 @@ export function Contact({ profile }: ContactProps) {
 
               <ContactDetail label="Email" href={`mailto:${contact.email}`}>
                 {contact.email}
+              </ContactDetail>
+
+              <ContactDetail label="Support" href={`mailto:${supportEmail}`}>
+                {supportEmail}
               </ContactDetail>
             </div>
 

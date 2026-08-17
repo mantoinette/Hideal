@@ -30,6 +30,8 @@ function SocialLink({ href, label, children }: { href: string; label: string; ch
 }
 
 export function Footer({ profile }: FooterProps) {
+  const supportEmail = profile.contact.supportEmail ?? 'support@hideal.rw'
+
   return (
     <footer className="border-t border-white/10 bg-ink">
       <div className="section-container py-16">
@@ -76,6 +78,9 @@ export function Footer({ profile }: FooterProps) {
                 <span className="block text-xs uppercase tracking-wider text-white/40">Email</span>
                 <a href={`mailto:${profile.contact.email}`} className="mt-1 block hover:text-white">
                   {profile.contact.email}
+                </a>
+                <a href={`mailto:${supportEmail}`} className="mt-1 block hover:text-white">
+                  {supportEmail}
                 </a>
               </li>
             </ul>

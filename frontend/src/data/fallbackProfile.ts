@@ -3,16 +3,17 @@ import type { CompanyProfile } from '../types/company'
 export const fallbackProfile: CompanyProfile = {
   name: 'HIDEAL',
   tagline: 'Fueling the Future, Powering Progress',
-  founded: '2023',
+  founded: '2022',
   about:
-    'Founded in 2023 and headquartered in Rwanda, HIDEAL is a forward-thinking startup operating under a limited by shares structure. Positioned at the intersection of real estate development and technology innovation, we aim to transform the urban landscape by responding to the growing demand for sustainable, smart, and inclusive living environments.',
+    'Founded in 2022 and headquartered in Rwanda, HIDEAL is a forward-thinking startup operating under a limited by shares structure. Positioned at the intersection of real estate development and technology innovation, we aim to transform the urban landscape by responding to the growing demand for sustainable, smart, and inclusive living environments.',
   mission:
     'At HIDEAL, our mission is to redefine real estate development by integrating cutting-edge technology with sustainable practices. We are committed to delivering high-quality, environmentally responsible solutions that meet the evolving needs of modern living while making a positive impact on both communities and the planet.',
   contact: {
     location: 'Kimihurura, Kigali, Rwanda',
     address: '55 KG 656 ST KIMIHURURA KIGALI RWANDA',
     phone: '+250 781 151 757',
-    email: 'hodali@hideal.rw',
+    email: 'info@hideal.rw',
+    supportEmail: 'support@hideal.rw',
   },
   services: [
     {

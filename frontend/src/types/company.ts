@@ -3,6 +3,7 @@ export interface ContactInfo {
   address: string
   phone: string
   email: string
+  supportEmail: string
 }
 
 export interface ServiceArea {

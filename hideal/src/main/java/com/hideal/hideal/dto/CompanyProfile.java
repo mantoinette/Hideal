@@ -16,7 +16,7 @@ public record CompanyProfile(
 		List<String> innovations,
 		String conclusion
 ) {
-	public record ContactInfo(String location, String address, String phone, String email) {
+	public record ContactInfo(String location, String address, String phone, String email, String supportEmail) {
 	}
 
 	public record ServiceArea(String title, String description, List<String> highlights) {
