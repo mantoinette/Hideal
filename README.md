@@ -47,5 +47,6 @@ Frontend runs at `http://localhost:5173`
 
 - **Address:** 55 KG 656 ST KIMIHURURA KIGALI RWANDA
 - **Phone:** +250 781 151 757
-- **Email:** hodali@hideal.rw
+- **Email:** info@hideal.rw
+- **Support:** support@hideal.rw
 - **Website:** www.hideal.rw

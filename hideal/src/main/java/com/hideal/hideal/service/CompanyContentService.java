@@ -15,14 +15,15 @@ public class CompanyContentService {
 		return new CompanyProfile(
 				"HIDEAL",
 				"Fueling the Future, Powering Progress",
-				"2023",
-				"Founded in 2023 and headquartered in Rwanda, HIDEAL is a forward-thinking startup operating under a limited by shares structure. Positioned at the intersection of real estate development and technology innovation, we aim to transform the urban landscape by responding to the growing demand for sustainable, smart, and inclusive living environments.",
+				"2022",
+				"Founded in 2022 and headquartered in Rwanda, HIDEAL is a forward-thinking startup operating under a limited by shares structure. Positioned at the intersection of real estate development and technology innovation, we aim to transform the urban landscape by responding to the growing demand for sustainable, smart, and inclusive living environments.",
 				"At HIDEAL, our mission is to redefine real estate development by integrating cutting-edge technology with sustainable practices. We are committed to delivering high-quality, environmentally responsible solutions that meet the evolving needs of modern living while making a positive impact on both communities and the planet.",
 				new ContactInfo(
 						"Kimihurura, Kigali, Rwanda",
 						"55 KG 656 ST KIMIHURURA KIGALI RWANDA",
 						"+250 781 151 757",
-						"hodali@hideal.rw"
+						"info@hideal.rw",
+						"support@hideal.rw"
 				),
 				List.of(
 						new ServiceArea(

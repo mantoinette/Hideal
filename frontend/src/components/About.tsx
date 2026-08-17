@@ -5,13 +5,13 @@ interface AboutProps {
   profile: CompanyProfile
 }
 
-const highlights = [
-  { label: 'Founded', value: '2023' },
-  { label: 'Headquarters', value: 'Rwanda' },
-  { label: 'Focus', value: 'Real Estate & Technology' },
-]
-
 export function About({ profile }: AboutProps) {
+  const highlights = [
+    { label: 'Founded', value: profile.founded },
+    { label: 'Headquarters', value: 'Rwanda' },
+    { label: 'Focus', value: 'Real Estate & Technology' },
+  ]
+
   return (
     <section id="about" className="bg-paper py-24 text-ink">
       <div className="section-container grid items-center gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
