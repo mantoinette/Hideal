@@ -14,23 +14,19 @@ const highlights = [
 export function About({ profile }: AboutProps) {
   return (
     <section id="about" className="bg-paper py-24 text-ink">
-      <div className="section-container grid items-stretch gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
-        <div className="relative min-h-[280px] sm:min-h-[320px] lg:min-h-full">
-          <div
-            aria-hidden
-            className="pointer-events-none absolute -bottom-4 -right-4 top-4 left-4 border border-crimson/20 bg-crimson/[0.04]"
-          />
-          <div className="image-frame absolute inset-0 overflow-hidden shadow-xl shadow-ink/10">
+      <div className="section-container grid items-center gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
+        <div className="relative mx-auto w-full max-w-lg lg:mx-0 lg:max-w-none">
+          <div className="image-frame aspect-[4/5] overflow-hidden border-l-4 border-crimson shadow-2xl shadow-ink/12 sm:aspect-[3/4]">
             <img
               src={images.about}
-              alt="Professional modern architecture and interior design"
+              alt="Modern sustainable building development by HIDEAL"
               loading="lazy"
               className="h-full w-full object-cover object-center"
             />
           </div>
         </div>
 
-        <div className="flex flex-col justify-center">
+        <div>
           <p className="section-label">About Us</p>
           <h2 className="mt-3 font-display text-4xl font-semibold leading-tight text-ink md:text-5xl">
             Where real estate meets innovation
@@ -41,17 +37,17 @@ export function About({ profile }: AboutProps) {
             are built to last—and designed for how Rwanda lives and works today.
           </p>
 
-          <ul className="mt-8 space-y-4">
-            <li className="flex gap-4 border-b border-ink/10 pb-4">
-              <span className="mt-2 h-2 w-2 shrink-0 bg-crimson" />
+          <ul className="mt-8 space-y-5">
+            <li className="flex gap-4">
+              <span className="mt-2.5 h-2 w-2 shrink-0 bg-crimson" />
               <p className="text-base leading-relaxed text-ink/80">
                 Founded in <strong className="text-ink">{profile.founded}</strong> and based in{' '}
                 <strong className="text-ink">Rwanda</strong>, {profile.name} is building the next
                 generation of living and working spaces.
               </p>
             </li>
-            <li className="flex gap-4 border-b border-ink/10 pb-4">
-              <span className="mt-2 h-2 w-2 shrink-0 bg-crimson" />
+            <li className="flex gap-4">
+              <span className="mt-2.5 h-2 w-2 shrink-0 bg-crimson" />
               <p className="text-base leading-relaxed text-ink/80">
                 We operate at the intersection of{' '}
                 <strong className="text-ink">real estate development</strong> and{' '}
@@ -59,16 +55,16 @@ export function About({ profile }: AboutProps) {
               </p>
             </li>
             <li className="flex gap-4">
-              <span className="mt-2 h-2 w-2 shrink-0 bg-crimson" />
+              <span className="mt-2.5 h-2 w-2 shrink-0 bg-crimson" />
               <p className="text-base leading-relaxed text-ink/80">
                 Creating sustainable, smart, and inclusive environments for modern Rwanda.
               </p>
             </li>
           </ul>
 
-          <div className="mt-10 flex flex-col divide-y border border-ink/10 bg-white sm:flex-row sm:divide-x sm:divide-y-0">
+          <div className="mt-10 grid gap-px bg-ink/10 sm:grid-cols-3">
             {highlights.map((item) => (
-              <div key={item.label} className="flex-1 px-5 py-5 text-center sm:py-6">
+              <div key={item.label} className="bg-white px-4 py-5 text-center sm:py-6">
                 <p className="text-xs uppercase tracking-wider text-crimson">{item.label}</p>
                 <p className="mt-1.5 text-sm font-semibold text-ink">{item.value}</p>
               </div>
