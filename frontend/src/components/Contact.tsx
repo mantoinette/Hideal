@@ -62,9 +62,9 @@ export function Contact({ profile }: ContactProps) {
         <div className="grid gap-12 lg:grid-cols-2">
           <div className="space-y-8">
             <div className="grid gap-4 sm:grid-cols-2">
-              <ContactDetail label="Location" href={mapsLink} external>
-                <span className="block font-medium text-ink">{contact.location}</span>
-                <span className="mt-1 block text-sm leading-relaxed text-ink/60">{contact.address}</span>
+              <ContactDetail label="Address" href={mapsLink} external>
+                <span className="block font-medium text-ink">{contact.address}</span>
+                <span className="mt-1 block text-sm leading-relaxed text-ink/60">{contact.location}</span>
               </ContactDetail>
 
               <ContactDetail label="Phone" href={phoneHref}>
