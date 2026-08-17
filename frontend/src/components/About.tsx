@@ -15,17 +15,17 @@ export function About({ profile }: AboutProps) {
   return (
     <section id="about" className="bg-paper py-24 text-ink">
       <div className="section-container grid items-stretch gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
-        <div className="relative min-h-[280px] sm:min-h-[320px] lg:min-h-0">
+        <div className="relative min-h-[280px] sm:min-h-[320px] lg:min-h-full">
           <div
             aria-hidden
-            className="absolute -bottom-4 -right-4 top-4 left-4 border border-crimson/20 bg-crimson/[0.04]"
+            className="pointer-events-none absolute -bottom-4 -right-4 top-4 left-4 border border-crimson/20 bg-crimson/[0.04]"
           />
-          <div className="image-frame relative h-full min-h-[280px] overflow-hidden shadow-xl shadow-ink/10 sm:min-h-[320px]">
+          <div className="image-frame absolute inset-0 overflow-hidden shadow-xl shadow-ink/10">
             <img
               src={images.about}
               alt="Professional modern architecture and interior design"
               loading="lazy"
-              className="absolute inset-0 h-full w-full object-cover object-center"
+              className="h-full w-full object-cover object-center"
             />
           </div>
         </div>
