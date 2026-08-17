@@ -15,17 +15,17 @@ export function Community({ items }: CommunityProps) {
 
   return (
     <section id="community" className="bg-ink">
-      <div className="relative min-h-[420px] overflow-hidden md:min-h-[480px]">
+      <div className="relative min-h-[460px] overflow-hidden md:min-h-[520px]">
         <img
           src={communityHero}
-          alt="Communities thriving alongside modern urban development"
-          className="absolute inset-0 h-full w-full object-cover object-center"
+          alt="Vibrant African community life alongside urban development"
+          className="absolute inset-0 h-full w-full object-cover object-[center_40%]"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-linear-to-r from-ink/95 via-ink/75 to-ink/35" />
+        <div className="absolute inset-0 bg-linear-to-r from-ink/95 via-ink/80 to-ink/40" />
         <div className="absolute inset-0 bg-crimson/10 mix-blend-multiply" />
 
-        <div className="section-container relative flex h-full min-h-[420px] items-end pb-16 md:min-h-[480px] md:pb-20">
+        <div className="section-container relative flex h-full min-h-[460px] items-end pb-16 md:min-h-[520px] md:pb-20">
           <div className="max-w-2xl">
             <p className="section-label">Community Impact</p>
             <h2 className="mt-3 font-display text-4xl font-semibold text-white md:text-5xl lg:text-6xl">
@@ -75,15 +75,15 @@ function ImpactCard({
   const position = highlight.imagePosition ?? 'object-center'
 
   return (
-    <article className="group overflow-hidden border border-white/10 bg-ink-soft transition hover:border-crimson/40">
-      <div className="image-frame relative aspect-[16/10]">
+    <article className="group overflow-hidden border border-white/10 bg-ink-soft transition duration-300 hover:border-crimson/40 hover:shadow-lg hover:shadow-crimson/10">
+      <div className="image-frame relative aspect-[16/10] overflow-hidden">
         <img
           src={highlight.image}
           alt={highlight.alt}
-          className={`h-full w-full object-cover transition duration-700 group-hover:scale-105 ${position}`}
+          className={`h-full w-full object-cover transition duration-700 group-hover:scale-[1.03] ${position}`}
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-linear-to-t from-ink/80 via-ink/20 to-transparent opacity-80 transition group-hover:opacity-90" />
+        <div className="absolute inset-0 bg-linear-to-t from-ink/90 via-ink/25 to-transparent" />
         <span className="absolute left-4 top-4 flex h-10 w-10 items-center justify-center bg-crimson font-display text-sm text-white">
           0{index + 1}
         </span>
