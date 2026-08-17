@@ -5,7 +5,8 @@ WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 
-RUN mvn -q -DskipTests package
+RUN mvn -DskipTests package \
+    && ls -la target/*.jar
 
 # Runtime stage
 FROM eclipse-temurin:17-jre-jammy
