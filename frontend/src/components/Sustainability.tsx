@@ -6,17 +6,16 @@ export function Sustainability() {
 
   return (
     <section id="sustainability" className="bg-ink">
-      <div className="relative min-h-[420px] overflow-hidden md:min-h-[480px]">
+      <div className="relative h-[460px] overflow-hidden md:h-[520px]">
         <img
           src={sustainabilityHero}
-          alt="Sustainable architecture blending design and nature"
-          className="absolute inset-0 h-full w-full object-cover"
-          loading="lazy"
+          alt="Solar energy and green building for sustainable development"
+          className="absolute inset-0 size-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-linear-to-r from-ink/95 via-ink/70 to-ink/30" />
-        <div className="absolute inset-0 bg-crimson/10 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-linear-to-r from-ink/75 via-ink/45 to-ink/20" />
+        <div className="absolute inset-0 bg-linear-to-t from-ink/55 via-transparent to-ink/25" />
 
-        <div className="section-container relative flex h-full min-h-[420px] items-end pb-16 md:min-h-[480px] md:pb-20">
+        <div className="section-container relative flex h-full items-end pb-16 md:pb-20">
           <div className="max-w-2xl">
             <p className="section-label">Green Building</p>
             <h2 className="mt-3 font-display text-4xl font-semibold text-white md:text-5xl lg:text-6xl">
