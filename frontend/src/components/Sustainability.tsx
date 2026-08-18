@@ -9,7 +9,7 @@ export function Sustainability() {
       <div className="relative h-[460px] overflow-hidden md:h-[520px]">
         <img
           src={sustainabilityHero}
-          alt="Solar energy and green building for sustainable development"
+          alt="Green building with trees and plants integrated into the architecture"
           className="absolute inset-0 size-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-linear-to-r from-ink/75 via-ink/45 to-ink/20" />
