@@ -10,7 +10,7 @@ export function Hero({ profile }: HeroProps) {
     <section className="relative min-h-screen overflow-hidden">
       <img
         src={images.hero}
-        alt="Contemporary Kigali architecture with trees, natural light and modern infrastructure"
+        alt="Aspirational view of contemporary architecture and green urban development in Rwanda"
         className="absolute inset-0 h-full w-full object-cover object-center"
         loading="eager"
         fetchPriority="high"

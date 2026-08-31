@@ -1,6 +1,6 @@
 export const images = {
   hero: '/images/hero.jpg',
-  about: '/images/sustainability/impact.jpg',
+  about: '/images/about.jpg',
   realEstate: '/images/real-estate.jpg',
   technology: '/images/technology.jpg',
   sustainability: '/images/sustainability.jpg',
@@ -8,4 +8,8 @@ export const images = {
   community: '/images/community.jpg',
   innovation: '/images/innovation.jpg',
   contact: '/images/contact.jpg',
+  energyComfort: '/images/energy/comfort.jpg',
+  development: '/images/development/pipeline.jpg',
+  rwandaVision: '/images/rwanda/vision.jpg',
+  partnerships: '/images/partnerships/collaboration.jpg',
 } as const

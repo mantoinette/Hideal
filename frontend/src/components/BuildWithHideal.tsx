@@ -1,9 +1,19 @@
 import { partnershipPathways } from '../data/partnerships'
+import { images } from '../data/images'
 
 export function BuildWithHideal() {
   return (
-    <section id="partnerships" className="bg-ink py-24">
-      <div className="section-container">
+    <section id="partnerships" className="relative overflow-hidden bg-ink py-24">
+      <img
+        src={images.partnerships}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 h-full w-full object-cover object-center opacity-20"
+        loading="lazy"
+      />
+      <div className="absolute inset-0 bg-ink/85" />
+
+      <div className="section-container relative">
         <div className="mb-14 max-w-3xl">
           <p className="section-label">Build With HIDEAL</p>
           <h2 className="mt-3 font-display text-4xl font-semibold text-white md:text-5xl">
@@ -20,7 +30,7 @@ export function BuildWithHideal() {
           {partnershipPathways.map((pathway, index) => (
             <article
               key={pathway.title}
-              className="border border-white/10 bg-ink-soft p-8 transition hover:border-crimson/40"
+              className="border border-white/10 bg-ink/70 p-8 backdrop-blur-sm transition hover:border-crimson/40"
             >
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-crimson">0{index + 1}</p>
               <h3 className="mt-3 font-display text-xl text-white">{pathway.title}</h3>

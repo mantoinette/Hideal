@@ -1,4 +1,5 @@
 import { comfortFeatures, energyApproach } from '../data/energy'
+import { images } from '../data/images'
 
 export function EnergyComfort() {
   return (
@@ -29,23 +30,35 @@ export function EnergyComfort() {
         </div>
 
         <div className="mt-20 border-t border-white/10 pt-16">
-          <h3 className="font-display text-3xl font-semibold text-white md:text-4xl">
-            Better Buildings Should Feel Better
-          </h3>
-          <p className="mt-4 max-w-2xl text-lg text-white/70">
-            Sustainability should not be experienced as a compromise. It should make buildings better.
-          </p>
-          <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {comfortFeatures.map((feature) => (
-              <li key={feature} className="flex items-center gap-3 text-sm text-white/75">
-                <span className="h-1.5 w-1.5 shrink-0 bg-crimson" />
-                {feature}
-              </li>
-            ))}
-          </ul>
-          <p className="mt-8 text-base italic text-white/60">
-            HIDEAL seeks to create environments where energy performance and human comfort work together.
-          </p>
+          <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+            <div>
+              <h3 className="font-display text-3xl font-semibold text-white md:text-4xl">
+                Better Buildings Should Feel Better
+              </h3>
+              <p className="mt-4 max-w-xl text-lg text-white/70">
+                Sustainability should not be experienced as a compromise. It should make buildings better.
+              </p>
+              <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+                {comfortFeatures.map((feature) => (
+                  <li key={feature} className="flex items-center gap-3 text-sm text-white/75">
+                    <span className="h-1.5 w-1.5 shrink-0 bg-crimson" />
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-8 text-base italic text-white/60">
+                HIDEAL seeks to create environments where energy performance and human comfort work together.
+              </p>
+            </div>
+            <div className="image-frame aspect-[4/3] overflow-hidden border-l-4 border-crimson shadow-2xl shadow-black/30">
+              <img
+                src={images.energyComfort}
+                alt="Bright, comfortable interior with natural light and modern design"
+                className="h-full w-full object-cover object-center"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
