@@ -1,34 +1,48 @@
 export const sustainabilityPillars = [
   {
-    title: 'Energy Efficiency',
-    copy: 'Smart designs that reduce energy use, lower operating costs, and create more comfortable spaces to live and work.',
+    title: 'Energy',
+    copy: 'Reduce consumption and increase renewable energy.',
     image: '/images/sustainability/energy.jpg',
-    alt: 'Energy-efficient modern building design',
+    alt: 'Energy-efficient building design',
   },
   {
-    title: 'Renewable Energy',
-    copy: 'Solar and clean power solutions embedded in our projects to cut emissions and deliver long-term value.',
-    image: '/images/sustainability/renewable.jpg',
-    alt: 'Solar panels generating renewable energy',
-  },
-  {
-    title: 'Eco-Friendly Materials',
-    copy: 'Recycled and renewable materials selected to reduce waste and limit environmental harm from build to finish.',
+    title: 'Materials',
+    copy: 'Use durable and responsible materials where appropriate.',
     image: '/images/sustainability/materials.jpg',
-    alt: 'Sustainable construction and planning materials',
+    alt: 'Responsible construction materials',
   },
   {
-    title: 'Climate Resilience',
-    copy: 'Developments built to withstand climate pressures and protect communities today and in the future.',
+    title: 'Water',
+    copy: 'Improve efficiency and responsible resource management.',
     image: '/images/sustainability/climate.jpg',
-    alt: 'Resilient architecture designed for changing climates',
+    alt: 'Water and resource management',
   },
   {
-    title: 'Reduced Environmental Impact',
-    copy: 'Every project is shaped to leave a lighter footprint across design, construction, and long-term use.',
+    title: 'Nature',
+    copy: 'Integrate trees, vegetation and green spaces.',
     image: '/images/sustainability/impact.jpg',
-    alt: 'Green building reducing environmental impact',
+    alt: 'Green spaces integrated into development',
+  },
+  {
+    title: 'Waste',
+    copy: 'Reduce construction and operational waste.',
+    image: '/images/sustainability/materials.jpg',
+    alt: 'Waste reduction in construction',
+  },
+  {
+    title: 'Resilience',
+    copy: 'Design for changing environmental conditions.',
+    image: '/images/sustainability/renewable.jpg',
+    alt: 'Climate-resilient design',
   },
 ] as const
 
 export const sustainabilityHero = '/images/sustainability/hero.jpg'
+
+export const carbonVisionSteps = [
+  { title: 'Reduce', detail: 'Energy demand' },
+  { title: 'Generate', detail: 'Renewable energy' },
+  { title: 'Measure', detail: 'Energy & carbon' },
+  { title: 'Optimize', detail: 'Building performance' },
+  { title: 'Progress', detail: 'Toward lower-carbon development' },
+] as const

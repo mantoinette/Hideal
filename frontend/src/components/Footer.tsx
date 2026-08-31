@@ -8,10 +8,11 @@ interface FooterProps {
 
 const navItems = [
   { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Sustainability', href: '#sustainability' },
-  { label: 'Community', href: '#community' },
+  { label: 'What We Do', href: '#what-we-do' },
+  { label: 'Development', href: '#development' },
+  { label: 'Energy & Sustainability', href: '#energy-sustainability' },
   { label: 'Innovation', href: '#innovation' },
+  { label: 'Impact', href: '#impact' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -36,17 +37,15 @@ export function Footer({ profile }: FooterProps) {
     <footer className="border-t border-white/10 bg-ink">
       <div className="section-container py-16">
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
-          {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <Logo size="lg" />
             <p className="mt-4 font-display text-lg text-white">{profile.name}</p>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-white/60">
-              Real estate development and technology solutions for sustainable, smart, and inclusive living
-              environments across Rwanda.
+              Building Rwanda&apos;s future intelligently and sustainably—real estate, technology, energy and
+              responsible design.
             </p>
           </div>
 
-          {/* Navigation */}
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-crimson">Navigation</h3>
             <ul className="mt-5 space-y-3">
@@ -60,7 +59,6 @@ export function Footer({ profile }: FooterProps) {
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-crimson">Contact</h3>
             <ul className="mt-5 space-y-3 text-sm text-white/70">
@@ -86,7 +84,6 @@ export function Footer({ profile }: FooterProps) {
             </ul>
           </div>
 
-          {/* Connect */}
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-crimson">Connect</h3>
             <p className="mt-5 text-sm text-white/60">Reach us by email or phone.</p>
@@ -110,7 +107,7 @@ export function Footer({ profile }: FooterProps) {
       <div className="border-t border-white/10">
         <div className="section-container flex flex-col gap-2 py-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-sm text-white/45">© {new Date().getFullYear()} HIDEAL. All rights reserved.</p>
-          <p className="text-xs text-white/35">Real Estate Development · Technology Solutions · Rwanda</p>
+          <p className="text-xs text-white/35">Real Estate · Technology · Energy · People · Planet</p>
         </div>
       </div>
     </footer>

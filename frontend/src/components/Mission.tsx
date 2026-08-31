@@ -11,7 +11,7 @@ export function Mission({ profile }: MissionProps) {
         <div className="border-l-4 border-crimson pl-8 md:pl-12">
           <p className="section-label">Our Mission</p>
           <h2 className="mt-4 max-w-4xl font-display text-3xl font-semibold leading-snug text-white md:text-4xl">
-            Redefining real estate through technology and sustainability
+            Building a scalable enterprise technology business
           </h2>
           <p className="mt-6 max-w-4xl text-lg leading-relaxed text-white/70">{profile.mission}</p>
         </div>

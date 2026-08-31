@@ -2,12 +2,12 @@ import type { CompanyProfile } from '../types/company'
 
 export const fallbackProfile: CompanyProfile = {
   name: 'HIDEAL',
-  tagline: 'Fueling the Future, Powering Progress',
+  tagline: "Building Rwanda's Future. Intelligently. Sustainably.",
   founded: '2022',
   about:
-    'Founded in 2022 and headquartered in Rwanda, HIDEAL is a forward-thinking startup operating under a limited by shares structure. Positioned at the intersection of real estate development and technology innovation, we aim to transform the urban landscape by responding to the growing demand for sustainable, smart, and inclusive living environments.',
+    'Founded in Rwanda in 2022, HIDEAL is an emerging real-estate and technology company focused on developing intelligent, comfortable, energy-efficient and environmentally responsible environments. Our work brings together development thinking, technology, energy solutions and sustainable design to respond to the changing needs of Rwanda\'s cities and communities.',
   mission:
-    'At HIDEAL, our mission is to redefine real estate development by integrating cutting-edge technology with sustainable practices. We are committed to delivering high-quality, environmentally responsible solutions that meet the evolving needs of modern living while making a positive impact on both communities and the planet.',
+    'HIDEAL combines real-estate development, technology, energy efficiency and responsible design to create places that deliver long-term value for people, communities and the planet.',
   contact: {
     location: 'Kimihurura, Kigali, Rwanda',
     address: '55 KG 656 ST KIMIHURURA KIGALI RWANDA',
@@ -19,48 +19,52 @@ export const fallbackProfile: CompanyProfile = {
     {
       title: 'Real Estate Development',
       description:
-        'Designing and building high-performance, sustainable buildings that embody functionality, aesthetics, and ecological responsibility.',
+        'Identifying, planning and developing opportunities across residential, commercial and mixed-use environments.',
       highlights: [
-        'High-performance sustainable buildings',
-        'Functionality and aesthetics combined',
-        'Ecologically responsible design',
+        'Residential and commercial opportunities',
+        'Mixed-use environment planning',
+        'Thoughtful development identification',
       ],
     },
     {
-      title: 'Technology-Driven Solutions',
+      title: 'Sustainable Building Solutions',
       description:
-        'Leveraging modern innovations to create smart, energy-efficient, and future-ready structures.',
+        'Integrating energy efficiency, responsible materials, resource management and climate-conscious design into development decisions.',
       highlights: [
-        'Smart building technologies',
-        'Energy-efficient systems',
-        'Future-ready infrastructure',
+        'Energy efficiency integration',
+        'Responsible materials selection',
+        'Climate-conscious design',
       ],
     },
   ],
   sustainability: [
     {
-      title: 'Energy-Efficient Designs',
-      description:
-        'Prioritize reducing energy consumption through various strategies, ultimately leading to lower operational costs, increased comfort, and a smaller environmental footprint.',
+      title: 'Energy',
+      description: 'Reduce consumption and increase renewable energy.',
     },
     {
-      title: 'Eco-Friendly Materials',
-      description:
-        'Minimize environmental harm throughout their lifecycle, from raw material extraction to disposal. Made from recycled or renewable resources for reduced waste and lower carbon footprints.',
+      title: 'Materials',
+      description: 'Use durable and responsible materials where appropriate.',
     },
     {
-      title: 'Renewable Energy Systems',
-      description:
-        'Connecting diverse sources like wind, solar, and hydropower to the electricity network to reduce carbon emissions and enhance grid reliability.',
+      title: 'Water',
+      description: 'Improve efficiency and responsible resource management.',
     },
     {
-      title: 'Climate-Resilient Planning',
-      description:
-        'Proactively designing strategies to reduce vulnerability to climate change impacts while mitigating greenhouse gas emissions for sustainable development.',
+      title: 'Nature',
+      description: 'Integrate trees, vegetation and green spaces.',
+    },
+    {
+      title: 'Waste',
+      description: 'Reduce construction and operational waste.',
+    },
+    {
+      title: 'Resilience',
+      description: 'Design for changing environmental conditions.',
     },
   ],
   renewableEnergy:
-    'Our team brings in-depth expertise in solar energy integration, enabling us to embed renewable energy solutions seamlessly into our projects. This ensures lower energy costs, reduced carbon footprints, and enhanced long-term value for both clients and communities.',
+    'Energy performance begins with design. HIDEAL\'s approach is to reduce energy demand, integrate renewable energy where appropriate and use technology to improve building performance.',
   communityImpact: [
     'Community outreach',
     'Local partnerships',
@@ -69,10 +73,11 @@ export const fallbackProfile: CompanyProfile = {
     'Resilient communities',
   ],
   innovations: [
-    'Advanced design and planning software',
-    'Smart building technologies',
-    'Data-driven construction management',
+    'Digital planning and visualization',
+    'Data-supported project coordination',
+    'Smart building systems and monitoring',
+    'Performance data and continuous improvement',
   ],
   conclusion:
-    "HIDEAL is pioneering a new era in real estate—one where sustainability, technology, and community well-being are integral to every project. With a steadfast commitment to excellence, integrity, and environmental stewardship, we are set to lead the transformation of Rwanda's built environment and contribute to a more sustainable future for Africa and beyond.",
+    "Whether you have a development opportunity, investment proposition, technical capability or partnership idea, HIDEAL would like to explore what we can build together. We are at an early stage of our development, but our ambition and methodology are designed for the long term.",
 }

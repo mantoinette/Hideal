@@ -3,10 +3,11 @@ import { Logo } from './Logo'
 
 const navItems = [
   { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Sustainability', href: '#sustainability' },
-  { label: 'Community', href: '#community' },
+  { label: 'What We Do', href: '#what-we-do' },
+  { label: 'Development', href: '#development' },
+  { label: 'Energy & Sustainability', href: '#energy-sustainability' },
   { label: 'Innovation', href: '#innovation' },
+  { label: 'Impact', href: '#impact' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -33,7 +34,7 @@ export function Header() {
           <Logo size="md" />
         </a>
 
-        <nav className="hidden items-center gap-8 lg:flex">
+        <nav className="hidden items-center gap-6 xl:flex">
           {navItems.map((item) => (
             <a
               key={item.href}
@@ -44,16 +45,16 @@ export function Header() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="#partnerships"
             className="rounded-none bg-crimson px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-crimson-light"
           >
-            Get in Touch
+            Partner With Us
           </a>
         </nav>
 
         <button
           type="button"
-          className="rounded-none border border-white/20 p-2 text-white lg:hidden"
+          className="rounded-none border border-white/20 p-2 text-white xl:hidden"
           aria-label="Toggle menu"
           onClick={() => setMenuOpen((open) => !open)}
         >
@@ -64,7 +65,7 @@ export function Header() {
       </div>
 
       {menuOpen && (
-        <div className="border-t border-white/10 bg-ink px-6 py-4 lg:hidden">
+        <div className="border-t border-white/10 bg-ink px-6 py-4 xl:hidden">
           <nav className="flex flex-col gap-4">
             {navItems.map((item) => (
               <a
@@ -76,6 +77,13 @@ export function Header() {
                 {item.label}
               </a>
             ))}
+            <a
+              href="#partnerships"
+              className="text-sm font-semibold text-crimson"
+              onClick={() => setMenuOpen(false)}
+            >
+              Partner With Us
+            </a>
           </nav>
         </div>
       )}

@@ -50,12 +50,12 @@ export function Contact({ profile }: ContactProps) {
         <div className="mb-14 max-w-3xl">
           <p className="section-label">Contact Us</p>
           <h2 className="mt-3 font-display text-4xl font-semibold text-ink md:text-5xl">
-            Let&apos;s build the future together
+            Let&apos;s Build What Comes Next.
           </h2>
           <div className="mt-5 h-1 w-16 bg-crimson" />
           <p className="mt-6 text-lg leading-relaxed text-ink/75">
-            Reach our team in Kigali—we look forward to exploring partnerships, projects, and opportunities
-            with you.
+            Whether you have a development opportunity, investment proposition, technical capability or
+            partnership idea, we would like to explore what we can build together.
           </p>
         </div>
 

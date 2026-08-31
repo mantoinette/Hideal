@@ -10,7 +10,7 @@ export function Hero({ profile }: HeroProps) {
     <section className="relative min-h-screen overflow-hidden">
       <img
         src={images.hero}
-        alt="Modern sustainable architecture by HIDEAL"
+        alt="Contemporary Kigali architecture with trees, natural light and modern infrastructure"
         className="absolute inset-0 h-full w-full object-cover object-center"
         loading="eager"
         fetchPriority="high"
@@ -20,32 +20,40 @@ export function Hero({ profile }: HeroProps) {
 
       <div className="section-container relative flex min-h-screen items-center pt-28 pb-20">
         <div className="max-w-3xl">
-          <h1 className="font-display text-[clamp(2.5rem,7vw,4.25rem)] font-semibold leading-none tracking-[0.12em] text-white">
-            {profile.name}
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/60">
+            Our vision for the future of Rwanda&apos;s built environment
+          </p>
+          <h1 className="mt-4 font-display text-[clamp(2rem,5.5vw,3.75rem)] font-semibold leading-tight text-white">
+            {profile.tagline}
           </h1>
           <div className="mt-5 flex items-center gap-4">
             <div className="h-px w-10 bg-crimson" />
             <div className="h-1 w-14 bg-crimson" />
           </div>
-          <p className="mt-5 font-display text-xl font-medium leading-snug text-white/95 md:text-2xl lg:text-3xl">
-            {profile.tagline}
+          <p className="mt-5 font-display text-xl font-medium leading-snug text-white/95 md:text-2xl">
+            HIDEAL develops intelligent, comfortable and energy-efficient environments designed for how Rwanda
+            lives, works and grows.
           </p>
           <p className="mt-5 max-w-lg text-lg leading-relaxed text-white/75">
-            Real estate, technology, and sustainability—united to create future-ready environments.
+            Combining real estate development, technology, energy efficiency and responsible design to create
+            better places for people and the planet.
+          </p>
+          <p className="mt-4 text-sm tracking-wide text-white/50">
+            Real Estate · Technology · Energy · People · Planet
           </p>
 
           <div className="mt-9 flex flex-wrap gap-4">
             <a
-              href="#services"
+              href="#about"
               className="bg-crimson px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-crimson-light"
             >
-              Explore Our Solutions
+              Explore HIDEAL
             </a>
             <a
               href="#contact"
               className="border border-white/40 px-7 py-3.5 text-sm font-semibold text-white transition hover:border-white hover:bg-white hover:text-ink"
             >
-              Contact Us
+              Start a Conversation
             </a>
           </div>
         </div>

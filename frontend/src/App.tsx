@@ -1,16 +1,21 @@
 import { useEffect, useState } from 'react'
 import { fetchCompanyProfile } from './api/client'
 import { About } from './components/About'
+import { BuildWithHideal } from './components/BuildWithHideal'
 import { Community } from './components/Community'
 import { Conclusion } from './components/Conclusion'
 import { Contact } from './components/Contact'
+import { DevelopmentPipeline } from './components/DevelopmentPipeline'
+import { EnergyComfort } from './components/EnergyComfort'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { Innovation } from './components/Innovation'
-import { Mission } from './components/Mission'
+import { Philosophy } from './components/Philosophy'
+import { RwandaVision } from './components/RwandaVision'
 import { Services } from './components/Services'
 import { Sustainability } from './components/Sustainability'
+import { WhyHideal } from './components/WhyHideal'
 import { Logo } from './components/Logo'
 import type { CompanyProfile } from './types/company'
 
@@ -57,11 +62,16 @@ export default function App() {
       <main>
         <Hero profile={profile} />
         <About profile={profile} />
-        <Mission profile={profile} />
+        <Philosophy />
+        <WhyHideal />
         <Services />
+        <EnergyComfort />
+        <DevelopmentPipeline />
+        <Innovation />
         <Sustainability />
+        <RwandaVision />
         <Community items={profile.communityImpact} />
-        <Innovation items={profile.innovations} />
+        <BuildWithHideal />
         <Conclusion text={profile.conclusion} />
         <Contact profile={profile} />
       </main>

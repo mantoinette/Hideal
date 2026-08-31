@@ -17,7 +17,7 @@ export const communityHighlights = [
   },
   {
     title: 'Economic growth',
-    copy: 'Projects that create jobs, support local enterprise, and strengthen the economic fabric of Rwanda cities.',
+    copy: 'Projects that create jobs, support local enterprise, and strengthen the economic fabric of Rwanda\'s cities.',
     image: '/images/community/economic-growth.jpg',
     alt: 'Urban settlement supporting economic growth and housing development',
     imagePosition: 'object-center',
@@ -31,7 +31,7 @@ export const communityHighlights = [
   },
   {
     title: 'Resilient communities',
-    copy: 'Modern infrastructure and planning that helps neighborhoods thrive today and withstand tomorrow challenges.',
+    copy: 'Modern infrastructure and planning that helps neighborhoods thrive today and withstand tomorrow\'s challenges.',
     image: '/images/community/resilient.jpg',
     alt: 'Modern resilient urban infrastructure and architecture',
     imagePosition: 'object-[center_25%]',
