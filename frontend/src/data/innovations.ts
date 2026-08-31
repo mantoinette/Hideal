@@ -1,26 +1,30 @@
+import { imageAssignments } from './imageAssignments'
+
+const { innovation: img } = imageAssignments
+
 export const innovationHighlights = [
   {
     title: 'Design',
     copy: 'Digital planning and visualization.',
-    image: '/images/innovation/design-software.jpg',
+    image: img.design,
     alt: 'Architectural design software and digital planning',
   },
   {
     title: 'Build',
     copy: 'Data-supported project coordination and management.',
-    image: '/images/innovation/construction-data.jpg',
+    image: img.build,
     alt: 'Construction management with data-driven coordination',
   },
   {
     title: 'Operate',
     copy: 'Smart building systems and monitoring.',
-    image: '/images/innovation/smart-building.jpg',
+    image: img.operate,
     alt: 'Modern building interior with smart systems',
   },
   {
     title: 'Optimize',
     copy: 'Performance data and continuous improvement.',
-    image: '/images/technology.jpg',
+    image: img.optimize,
     alt: 'Technology systems for building performance optimization',
   },
 ] as const

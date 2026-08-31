@@ -1,43 +1,47 @@
+import { imageAssignments } from './imageAssignments'
+
+const { sustainability: img } = imageAssignments
+
 export const sustainabilityPillars = [
   {
     title: 'Energy',
     copy: 'Reduce consumption and increase renewable energy.',
-    image: '/images/sustainability/energy.jpg',
-    alt: 'Energy-efficient building design',
+    image: img.energy,
+    alt: 'Energy-efficient modern building facade',
   },
   {
     title: 'Materials',
     copy: 'Use durable and responsible materials where appropriate.',
-    image: '/images/sustainability/materials.jpg',
-    alt: 'Responsible construction materials',
+    image: img.materials,
+    alt: 'Sustainable and responsibly sourced building materials',
   },
   {
     title: 'Water',
     copy: 'Improve efficiency and responsible resource management.',
-    image: '/images/sustainability/climate.jpg',
-    alt: 'Water and resource management',
+    image: img.water,
+    alt: 'Water-efficient systems in sustainable architecture',
   },
   {
     title: 'Nature',
     copy: 'Integrate trees, vegetation and green spaces.',
-    image: '/images/sustainability/impact.jpg',
+    image: img.nature,
     alt: 'Green spaces integrated into development',
   },
   {
     title: 'Waste',
     copy: 'Reduce construction and operational waste.',
-    image: '/images/sustainability/materials.jpg',
-    alt: 'Waste reduction in construction',
+    image: img.waste,
+    alt: 'Efficient construction planning and material use',
   },
   {
     title: 'Resilience',
     copy: 'Design for changing environmental conditions.',
-    image: '/images/sustainability/renewable.jpg',
-    alt: 'Climate-resilient design',
+    image: img.resilience,
+    alt: 'Climate-resilient architectural design',
   },
 ] as const
 
-export const sustainabilityHero = '/images/sustainability/hero.jpg'
+export const sustainabilityHero = img.hero
 
 export const carbonVisionSteps = [
   { title: 'Reduce', detail: 'Energy demand' },

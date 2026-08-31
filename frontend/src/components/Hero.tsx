@@ -5,6 +5,8 @@ interface HeroProps {
   profile: CompanyProfile
 }
 
+const focusAreas = ['Real Estate', 'Technology', 'Energy', 'People', 'Planet'] as const
+
 export function Hero({ profile }: HeroProps) {
   return (
     <section className="relative min-h-screen overflow-hidden">
@@ -15,43 +17,49 @@ export function Hero({ profile }: HeroProps) {
         loading="eager"
         fetchPriority="high"
       />
-      <div className="absolute inset-0 bg-linear-to-r from-ink/92 via-ink/55 to-ink/15" />
-      <div className="absolute inset-0 bg-linear-to-t from-ink/85 via-transparent to-ink/25" />
+      <div className="absolute inset-0 bg-linear-to-r from-ink/95 via-ink/70 to-ink/25" />
+      <div className="absolute inset-0 bg-linear-to-t from-ink/90 via-ink/20 to-transparent" />
 
-      <div className="section-container relative flex min-h-screen items-center pt-28 pb-20">
-        <div className="max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/60">
-            Our vision for the future of Rwanda&apos;s built environment
+      <div className="section-container relative flex min-h-screen flex-col justify-end pb-16 pt-32 md:pb-24 md:pt-36">
+        <div className="max-w-4xl">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-white/55">
+            {profile.name} · Rwanda · {profile.founded}
           </p>
-          <h1 className="mt-4 font-display text-[clamp(2rem,5.5vw,3.75rem)] font-semibold leading-tight text-white">
-            {profile.tagline}
+
+          <h1 className="mt-5 font-display text-[clamp(2.25rem,6vw,4.5rem)] font-semibold leading-[1.08] tracking-tight text-white">
+            <span className="block">Building Rwanda&apos;s Future.</span>
+            <span className="mt-1 block text-white/90">
+              Intelligently. <span className="text-crimson-light">Sustainably.</span>
+            </span>
           </h1>
-          <div className="mt-5 flex items-center gap-4">
-            <div className="h-px w-10 bg-crimson" />
-            <div className="h-1 w-14 bg-crimson" />
-          </div>
-          <p className="mt-5 font-display text-xl font-medium leading-snug text-white/95 md:text-2xl">
-            HIDEAL develops intelligent, comfortable and energy-efficient environments designed for how Rwanda
-            lives, works and grows.
-          </p>
-          <p className="mt-5 max-w-lg text-lg leading-relaxed text-white/75">
-            Combining real estate development, technology, energy efficiency and responsible design to create
-            better places for people and the planet.
-          </p>
-          <p className="mt-4 text-sm tracking-wide text-white/50">
-            Real Estate · Technology · Energy · People · Planet
+
+          <div className="mt-8 h-px w-20 bg-crimson" />
+
+          <p className="mt-8 max-w-xl text-base leading-relaxed text-white/80 md:text-lg">
+            Intelligent, comfortable and energy-efficient environments—for how Rwanda lives, works and grows.
           </p>
 
-          <div className="mt-9 flex flex-wrap gap-4">
+          <ul className="mt-8 flex flex-wrap gap-2.5">
+            {focusAreas.map((area) => (
+              <li
+                key={area}
+                className="border border-white/15 bg-white/5 px-3.5 py-1.5 text-xs font-medium tracking-wide text-white/75 backdrop-blur-sm"
+              >
+                {area}
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-10 flex flex-wrap gap-4">
             <a
               href="#about"
-              className="bg-crimson px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-crimson-light"
+              className="bg-crimson px-8 py-3.5 text-sm font-semibold text-white transition hover:bg-crimson-light"
             >
               Explore HIDEAL
             </a>
             <a
               href="#contact"
-              className="border border-white/40 px-7 py-3.5 text-sm font-semibold text-white transition hover:border-white hover:bg-white hover:text-ink"
+              className="border border-white/35 bg-white/5 px-8 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition hover:border-white hover:bg-white hover:text-ink"
             >
               Start a Conversation
             </a>
