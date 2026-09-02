@@ -8,6 +8,8 @@ interface HeroProps {
 const focusAreas = ['Real Estate', 'Technology', 'Energy', 'People', 'Planet'] as const
 
 export function Hero({ profile }: HeroProps) {
+  const heroLocation = profile.contact.location.split(',').slice(-2).join(',').trim()
+
   return (
     <section className="relative min-h-screen overflow-hidden">
       <img
@@ -22,9 +24,12 @@ export function Hero({ profile }: HeroProps) {
 
       <div className="section-container relative flex min-h-screen flex-col justify-end pb-16 pt-32 md:pb-24 md:pt-36">
         <div className="max-w-4xl">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-white/55">
-            {profile.name} · Rwanda · {profile.founded}
-          </p>
+          <div className="flex items-center gap-3">
+            <span className="h-px w-8 bg-crimson/80" aria-hidden="true" />
+            <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-white/60">
+              {profile.name} · Real Estate & Technology · {heroLocation}
+            </p>
+          </div>
 
           <h1 className="mt-5 font-display text-[clamp(2.25rem,6vw,4.5rem)] font-semibold leading-[1.08] tracking-tight text-white">
             <span className="block">Building Rwanda&apos;s Future.</span>
