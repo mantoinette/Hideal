@@ -10,9 +10,6 @@ export function Community({ items }: CommunityProps) {
     title: items[index] ?? highlight.title,
   }))
 
-  const topRow = highlights.slice(0, 3)
-  const bottomRow = highlights.slice(3)
-
   return (
     <section id="impact" className="bg-ink">
       <div className="relative h-[460px] overflow-hidden md:h-[520px]">
@@ -39,16 +36,28 @@ export function Community({ items }: CommunityProps) {
         </div>
       </div>
 
-      <div className="section-container py-20">
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {topRow.map((highlight, index) => (
-            <ImpactCard key={highlight.title} highlight={highlight} index={index} />
-          ))}
+      <div className="section-container py-20 md:py-24">
+        <div className="mb-12 border-b border-white/10 pb-10 md:mb-14">
+          <p className="section-label text-white/55">Our focus areas</p>
+          <p className="mt-3 max-w-2xl text-base leading-relaxed text-white/65 md:text-lg">
+            Five integrated priorities that guide how HIDEAL engages communities, partners and local economies
+            across every project.
+          </p>
         </div>
 
-        <div className="mt-6 grid gap-6 md:grid-cols-2 lg:mx-auto lg:max-w-4xl">
-          {bottomRow.map((highlight, index) => (
-            <ImpactCard key={highlight.title} highlight={highlight} index={index + 3} />
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-6">
+          {highlights.map((highlight, index) => (
+            <div
+              key={highlight.title}
+              className={[
+                index < 3 ? 'lg:col-span-2' : 'lg:col-span-3',
+                index === 4 ? 'sm:col-span-2 sm:max-w-lg sm:justify-self-center lg:max-w-none lg:justify-self-stretch' : '',
+              ]
+                .filter(Boolean)
+                .join(' ')}
+            >
+              <ImpactCard highlight={highlight} index={index} />
+            </div>
           ))}
         </div>
       </div>
@@ -66,8 +75,8 @@ function ImpactCard({
   const position = highlight.imagePosition ?? 'object-center'
 
   return (
-    <article className="group overflow-hidden border border-white/10 bg-ink-soft transition duration-300 hover:border-crimson/40 hover:shadow-lg hover:shadow-crimson/10">
-      <div className="image-frame relative aspect-[16/10] overflow-hidden">
+    <article className="group flex h-full flex-col overflow-hidden border border-white/10 bg-ink-soft transition duration-300 hover:border-crimson/40 hover:shadow-lg hover:shadow-crimson/10">
+      <div className="image-frame relative aspect-[16/10] shrink-0 overflow-hidden">
         <img
           src={highlight.image}
           alt={highlight.alt}
@@ -75,13 +84,13 @@ function ImpactCard({
           loading="lazy"
         />
         <div className="absolute inset-0 bg-linear-to-t from-ink/90 via-ink/25 to-transparent" />
-        <span className="absolute left-4 top-4 flex h-10 w-10 items-center justify-center bg-crimson font-display text-sm text-white">
-          0{index + 1}
+        <span className="absolute left-4 top-4 flex h-10 w-10 items-center justify-center bg-crimson font-display text-sm font-semibold text-white">
+          {String(index + 1).padStart(2, '0')}
         </span>
       </div>
-      <div className="p-6">
-        <h3 className="font-display text-xl text-white">{highlight.title}</h3>
-        <p className="mt-3 text-sm leading-relaxed text-white/65">{highlight.copy}</p>
+      <div className="flex flex-1 flex-col p-6 md:p-7">
+        <h3 className="font-display text-xl text-white md:text-[1.35rem]">{highlight.title}</h3>
+        <p className="mt-3 flex-1 text-sm leading-relaxed text-white/65 md:text-[0.95rem]">{highlight.copy}</p>
       </div>
     </article>
   )
