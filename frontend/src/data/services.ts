@@ -31,7 +31,7 @@ export const coreFocusAreas = [
     title: 'Development Partnerships',
     copy: 'Working with investors, landowners, technical partners, developers and other stakeholders to bring viable opportunities to life.',
     image: img.partnerships,
-    alt: 'Professional team collaborating on a development partnership',
+    alt: 'Community and stakeholder engagement for development partnerships',
   },
   {
     title: 'Construction & Project Delivery',

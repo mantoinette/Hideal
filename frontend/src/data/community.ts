@@ -23,7 +23,7 @@ export const communityHighlights = [
     title: 'Economic growth',
     copy: 'Projects that create jobs, support local enterprise, and strengthen the economic fabric of Rwanda\'s cities.',
     image: img.economicGrowth,
-    alt: 'Urban development supporting local economic growth',
+    alt: 'Urban development and growth across Rwanda\'s cities',
     imagePosition: 'object-center',
   },
   {

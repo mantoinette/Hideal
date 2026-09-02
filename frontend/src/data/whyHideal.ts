@@ -1,22 +1,27 @@
 export const whyHidealReasons = [
   {
     title: 'Local Understanding',
-    copy: 'Rooted in Rwanda and focused on its evolving built environment.',
+    subtitle: 'Rooted in Rwanda',
+    copy: 'Focused on its evolving built environment and the needs of its cities and communities.',
   },
   {
     title: 'Integrated Thinking',
-    copy: 'Real estate, technology, energy and sustainability considered together.',
+    subtitle: 'One connected approach',
+    copy: 'Real estate, technology, energy and sustainability considered together—not in isolation.',
   },
   {
     title: 'People-Centered',
-    copy: 'Comfort and wellbeing are part of development performance.',
+    subtitle: 'Comfort matters',
+    copy: 'Wellbeing and human experience are part of how we measure development performance.',
   },
   {
     title: 'Long-Term Perspective',
-    copy: 'Designed around durability, resilience and lifecycle value.',
+    subtitle: 'Built to last',
+    copy: 'Designed around durability, resilience and lifecycle value—not short-term gains.',
   },
   {
     title: 'Partnership Driven',
-    copy: 'Open to investors, technical experts, landowners and development partners.',
+    subtitle: 'Open to collaborate',
+    copy: 'Working with investors, technical experts, landowners and development partners.',
   },
 ] as const

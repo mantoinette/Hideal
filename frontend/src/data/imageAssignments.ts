@@ -4,13 +4,14 @@
 export const imageAssignments = {
   hero: '/images/hero.jpg',
   about: '/images/about.jpg',
+  whyHideal: '/images/community/economic-growth.jpg',
 
   services: {
     realEstate: '/images/real-estate.jpg',
     sustainableBuilding: '/images/sustainability.jpg',
     energy: '/images/solar.jpg',
     technology: '/images/services/technology.jpg',
-    partnerships: '/images/partnerships/collaboration.jpg',
+    partnerships: '/images/community.jpg',
     construction: '/images/services/construction.jpg',
   },
 
@@ -41,10 +42,10 @@ export const imageAssignments = {
     hero: '/images/community/hero.jpg',
     outreach: '/images/community/outreach.jpg',
     partnerships: '/images/community/partnerships.jpg',
-    economicGrowth: '/images/community/economic-growth.jpg',
+    economicGrowth: '/images/services/real-estate.jpg',
     inclusive: '/images/community/inclusive.jpg',
     resilient: '/images/community/resilient.jpg',
   },
 
-  partnershipsSection: '/images/community.jpg',
+  partnershipsSection: '/images/partnerships/collaboration.jpg',
 } as const
