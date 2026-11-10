@@ -1,7 +1,6 @@
 import { useEffect } from 'react'
 import { Logo } from './Logo'
 import { fallbackProfile } from '../data/fallbackProfile'
-import { coreFocusAreas } from '../data/services'
 
 function PhoneIcon() {
   return (
@@ -76,13 +75,12 @@ export function MaintenancePage() {
           <h1 className="max-w-5xl text-[clamp(3rem,8.4vw,7rem)] font-bold uppercase leading-[0.9] tracking-tight text-white">
             Website under maintenance
           </h1>
-          <p className="mt-6 max-w-xl font-display text-2xl text-white/90 md:text-3xl">
-            Building Rwanda&apos;s future. Intelligently. Sustainably.
+          <p className="mt-8 max-w-2xl text-xl font-bold text-white md:text-2xl">
+            We apologize for the inconvenience!
           </p>
-          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
-            This is the only page open while the rest of the HIDEAL website is renewed. HIDEAL develops
-            intelligent, comfortable and energy-efficient places in Kigali. The team in Kimihurura is
-            ready to talk.
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/80 md:text-lg">
+            Our website is currently undergoing maintenance as we work to bring you a better online
+            experience. We appreciate your patience and understanding while we make these improvements.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
@@ -104,47 +102,27 @@ export function MaintenancePage() {
       <section className="bg-paper text-ink" aria-labelledby="about-hideal">
         <div className="section-container py-16 md:py-24">
           <div className="max-w-2xl">
-            <p className="section-label">What HIDEAL does</p>
-            <h2 id="about-hideal" className="mt-4 font-display text-3xl leading-tight md:text-5xl">
-              Real estate, technology and energy, shaped for Kigali.
+            <h2 id="about-hideal" className="font-display text-3xl leading-tight md:text-5xl">
+              About HIDEAL
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-ink/75 md:text-lg">
-              Founded in 2022, HIDEAL develops places that stay comfortable and efficient over time. We
-              bring property development, sustainable design and practical technology into one practice
-              for homes, workplaces and mixed-use communities.
+            <p className="mt-5 text-base leading-relaxed text-ink/80 md:text-lg">
+              HIDEAL develops intelligent, comfortable, and energy-efficient places in Kigali.
+            </p>
+            <p className="mt-3 text-base leading-relaxed text-ink/80 md:text-lg">
+              Our team in Kimihurura is available and ready to assist you.
             </p>
           </div>
-
-          <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {coreFocusAreas.map((service) => (
-              <li key={service.title} className="group bg-white shadow-sm shadow-black/5">
-                <div className="image-frame h-48">
-                  <img
-                    src={service.image}
-                    alt={service.alt}
-                    className="transition duration-700 group-hover:scale-105"
-                  />
-                </div>
-                <div className="p-5 md:p-6">
-                  <h3 className="font-display text-2xl leading-tight">{service.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-ink/70">{service.copy}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
 
       <section className="border-t border-white/10 bg-ink" aria-labelledby="contact-hideal">
         <div className="section-container py-16 md:py-20">
           <div className="max-w-2xl">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-crimson-light">Contact</p>
-            <h2 id="contact-hideal" className="mt-4 font-display text-3xl md:text-5xl">
-              Reach HIDEAL directly.
+            <h2 id="contact-hideal" className="font-display text-3xl md:text-5xl">
+              Need to get in touch?
             </h2>
-            <p className="mt-4 max-w-xl text-base leading-relaxed text-white/70">
-              While the rest of the website is closed, phone, email and a visit to the office are the
-              way to start a conversation.
+            <p className="mt-4 max-w-xl text-base leading-relaxed text-white/75">
+              Feel free to contact us through our phone number or email address.
             </p>
           </div>
 
@@ -185,8 +163,9 @@ export function MaintenancePage() {
         </div>
       </section>
 
-      <footer className="section-container border-t border-white/10 py-6 text-sm text-white/45">
-        HIDEAL · Real estate development and technology · Kimihurura, Kigali
+      <footer className="section-container border-t border-white/10 py-10">
+        <p className="text-base text-white/80">Thank you for your patience.</p>
+        <p className="mt-2 font-semibold text-white">The HIDEAL Team</p>
       </footer>
     </div>
   )
