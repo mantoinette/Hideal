@@ -122,11 +122,16 @@ export function MaintenancePage() {
               performance, responsible materials and practical technology into how those places are
               designed, built and operated.
             </p>
-            <ul className="mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+            <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {coreFocusAreas.map((area) => (
-                <li key={area.title} className="border-t border-ink/10 pt-4">
-                  <h4 className="text-base font-semibold">{area.title}</h4>
-                  <p className="mt-2 text-sm leading-relaxed text-ink/70">{area.copy}</p>
+                <li key={area.title} className="bg-white shadow-sm shadow-black/5">
+                  <div className="image-frame h-48">
+                    <img src={area.image} alt={area.alt} />
+                  </div>
+                  <div className="p-5 md:p-6">
+                    <h4 className="text-base font-semibold">{area.title}</h4>
+                    <p className="mt-2 text-sm leading-relaxed text-ink/70">{area.copy}</p>
+                  </div>
                 </li>
               ))}
             </ul>
