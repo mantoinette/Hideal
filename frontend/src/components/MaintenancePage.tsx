@@ -55,12 +55,12 @@ export function MaintenancePage() {
     <div className="bg-ink text-white">
       <section className="relative min-h-[100svh]">
         <img
-          src="/images/hero.jpg"
-          alt="A light-filled contemporary living space with warm materials and indoor planting"
-          className="absolute inset-0 h-full w-full object-cover"
+          src="/images/sustainability/hero.jpg"
+          alt="A contemporary residential tower with trees on every balcony and a garden at its base"
+          className="absolute inset-0 h-full w-full object-cover object-[center_30%]"
         />
-        <div className="absolute inset-0 bg-linear-to-r from-ink via-ink/80 to-ink/25" />
-        <div className="absolute inset-0 bg-linear-to-t from-ink via-ink/20 to-ink/35" />
+        <div className="absolute inset-0 bg-ink/60" />
+        <div className="absolute inset-0 bg-linear-to-r from-ink via-ink/75 to-ink/35" />
 
         <header className="section-container relative flex items-center justify-between gap-4 py-6">
           <a href="/" className="flex items-center gap-3" aria-label="HIDEAL home">
@@ -72,21 +72,17 @@ export function MaintenancePage() {
           </p>
         </header>
 
-        <div className="section-container relative flex min-h-[calc(100svh-5.5rem)] flex-col justify-end pb-16 pt-10 md:pb-20">
-          <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-white/80">
-            <span className="h-px w-8 bg-crimson-light" aria-hidden="true" />
+        <div className="section-container relative flex min-h-[calc(100svh-5.5rem)] flex-col justify-center pb-16 pt-8">
+          <h1 className="max-w-5xl text-[clamp(3rem,8.4vw,7rem)] font-bold uppercase leading-[0.9] tracking-tight text-white">
             Website under maintenance
-          </p>
-          <h1 className="mt-5 max-w-3xl font-display text-[clamp(2.6rem,6.2vw,5.4rem)] font-semibold leading-[1.02] tracking-tight">
-            Building Rwanda&apos;s future.
-            <span className="mt-1 block text-white/85">
-              Intelligently. <span className="text-crimson-light">Sustainably.</span>
-            </span>
           </h1>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-white/80 md:text-lg">
-            The HIDEAL website is being renewed, so this is the only page open to visitors. Our work
-            continues: intelligent, comfortable and energy-efficient places for how Rwanda lives and grows.
-            The team in Kimihurura is ready to talk.
+          <p className="mt-6 max-w-xl font-display text-2xl text-white/90 md:text-3xl">
+            Building Rwanda&apos;s future. Intelligently. Sustainably.
+          </p>
+          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
+            This is the only page open while the rest of the HIDEAL website is renewed. HIDEAL develops
+            intelligent, comfortable and energy-efficient places in Kigali. The team in Kimihurura is
+            ready to talk.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
