@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Logo } from './Logo'
 import { fallbackProfile } from '../data/fallbackProfile'
+import { coreFocusAreas } from '../data/services'
 
 function PhoneIcon() {
   return (
@@ -111,6 +112,24 @@ export function MaintenancePage() {
             <p className="mt-3 text-base leading-relaxed text-ink/80 md:text-lg">
               Our team in Kimihurura is available and ready to assist you.
             </p>
+          </div>
+
+          <div className="mt-14 border-t border-ink/10 pt-12">
+            <h3 className="font-display text-2xl md:text-4xl">What HIDEAL does</h3>
+            <p className="mt-5 max-w-3xl text-base leading-relaxed text-ink/75 md:text-lg">
+              Founded in Kigali in 2022, HIDEAL is a real estate and technology company. We identify,
+              plan and deliver residential, commercial and mixed-use environments, and we bring energy
+              performance, responsible materials and practical technology into how those places are
+              designed, built and operated.
+            </p>
+            <ul className="mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+              {coreFocusAreas.map((area) => (
+                <li key={area.title} className="border-t border-ink/10 pt-4">
+                  <h4 className="text-base font-semibold">{area.title}</h4>
+                  <p className="mt-2 text-sm leading-relaxed text-ink/70">{area.copy}</p>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
