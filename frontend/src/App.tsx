@@ -11,12 +11,14 @@ import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { Innovation } from './components/Innovation'
+import { MaintenancePage } from './components/MaintenancePage'
 import { Philosophy } from './components/Philosophy'
 import { RwandaVision } from './components/RwandaVision'
 import { Services } from './components/Services'
 import { Sustainability } from './components/Sustainability'
 import { WhyHideal } from './components/WhyHideal'
 import { Logo } from './components/Logo'
+import { maintenanceMode } from './maintenance'
 import type { CompanyProfile } from './types/company'
 
 function LoadingScreen() {
@@ -43,7 +45,7 @@ function ErrorScreen({ message }: { message: string }) {
   )
 }
 
-export default function App() {
+function PublicWebsite() {
   const [profile, setProfile] = useState<CompanyProfile | null>(null)
   const [error, setError] = useState<string | null>(null)
 
@@ -78,4 +80,9 @@ export default function App() {
       <Footer profile={profile} />
     </div>
   )
+}
+
+export default function App() {
+  if (maintenanceMode) return <MaintenancePage />
+  return <PublicWebsite />
 }
